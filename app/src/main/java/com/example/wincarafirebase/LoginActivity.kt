@@ -14,6 +14,8 @@ class LoginActivity : AppCompatActivity() {
         sleep(3000)
         installSplashScreen()
         enableEdgeToEdge()
+
+
         setContentView(R.layout.activity_login)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
