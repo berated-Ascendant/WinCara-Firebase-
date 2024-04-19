@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Wincara(Firebase)</string>
+    <string name="hello">Hello there, Welcome Back</string>
+    <string name="sign_in">Sign in to continue</string>
+</resources>
