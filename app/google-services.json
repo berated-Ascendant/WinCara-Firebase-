@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "275655485994",
+    "project_id": "wincara-firebase",
+    "storage_bucket": "wincara-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:275655485994:android:21f0f32f832c7fcedd7153",
+        "android_client_info": {
+          "package_name": "com.example.wincarafirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJo1xHWzeNIMUxTNi7Wv_jFmqYehgcJYQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

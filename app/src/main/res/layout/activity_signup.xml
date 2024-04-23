@@ -29,7 +29,7 @@
             android:layout_height="wrap_content"
             app:cursorColor="@color/black"
             app:hintTextColor="@color/black"
-            android:id="@+id/login_usernameinput"
+            android:id="@+id/signup_usernameinput"
             android:hint="Username"
             android:textColorHint="@color/black"
             app:boxStrokeColor="@color/black"
@@ -45,7 +45,7 @@
         <com.google.android.material.textfield.TextInputLayout
             android:layout_marginTop="5dp"
             android:padding="10dp"
-            android:id="@+id/login_passwordinput"
+            android:id="@+id/signup_passwordinput"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -66,23 +66,23 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
-            android:id="@+id/loginbtn"
+            android:id="@+id/signupbtn"
             android:layout_marginTop="10dp"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Log in"
+            android:text="Sign up"
             android:backgroundTint="@color/black"
             android:textColor="@color/white" />
 
         <Button
-            android:id="@+id/signinredirect"
+            android:id="@+id/loginredirect"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="right"
             android:padding="10dp"
             android:backgroundTint="#00000000"
-            android:text="Don't have an account? Sign up"
+            android:text="Already have an account? Log in"
             android:textColor="@color/black" />
 
     </LinearLayout>
