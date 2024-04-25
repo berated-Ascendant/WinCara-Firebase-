@@ -37,10 +37,11 @@ class SignupActivity : AppCompatActivity() {
         databaseReference = firebaseDB.reference.child("users")
 
         binding.signupbtn.setOnClickListener {
+
             val signupUsername = binding.signupUsernameinput.editText?.text.toString().trim()
             val signupPassword = binding.signupPasswordinput.editText?.text.toString().trim()
 
-            if(signupUsername.isNotEmpty() && signupPassword.isNotEmpty()){
+            if( signupUsername.isNotEmpty() && signupPassword.isNotEmpty()){
                 signupUser(signupUsername, signupPassword)
             }else{
                 Toast.makeText(this@SignupActivity, "Please fill out all the fields", Toast.LENGTH_SHORT).show()
