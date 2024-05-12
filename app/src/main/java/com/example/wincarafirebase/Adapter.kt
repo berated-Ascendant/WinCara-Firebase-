@@ -38,13 +38,13 @@ class Adapter( private val c: Context, private val userList: ArrayList<UserData>
         private lateinit var firebaseDB: FirebaseDatabase
         private lateinit var databaseReference: DatabaseReference
 
-        var id: TextView
+
         var username: TextView
         var password: TextView
         var menu: ImageView
 
         init {
-            id = itemView.findViewById(R.id.display_id)
+
             username = itemView.findViewById(R.id.username_display)
             password = itemView.findViewById(R.id.password_display)
             menu = itemView.findViewById(R.id.display_menu)
@@ -53,7 +53,8 @@ class Adapter( private val c: Context, private val userList: ArrayList<UserData>
 
         private fun popupMenus(itemView: View?) {
             val position = userList[adapterPosition]
-            val userId = position.email
+            val userId = position.id
+
 
             val popupMenus = PopupMenu(c, itemView)
             popupMenus.inflate(R.menu.show_menu)
