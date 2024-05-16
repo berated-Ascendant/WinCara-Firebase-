@@ -35,9 +35,6 @@ class Adapter( private val c: Context, private val userList: ArrayList<UserData>
     }
     class MyViewHolder(itemView: View, val userList: ArrayList<UserData>, val c: Context):RecyclerView.ViewHolder(itemView){
 
-        private lateinit var firebaseDB: FirebaseDatabase
-        private lateinit var databaseReference: DatabaseReference
-
 
         var username: TextView
         var password: TextView
@@ -74,7 +71,7 @@ class Adapter( private val c: Context, private val userList: ArrayList<UserData>
                                 val updatedPassword = newpassword.text.toString()
 
                                 // Get reference to the specific user node in the database
-                                val userRef = FirebaseDatabase.getInstance().getReference("users")
+                                val userRef = FirebaseDatabase.getInstance().getReference("users").child("id")
 
                                 // Update user information in the database
                                 userRef.child("username").setValue(updatedUsername)
@@ -95,7 +92,7 @@ class Adapter( private val c: Context, private val userList: ArrayList<UserData>
                         true
                     }
                     R.id.delete -> {
-                        val userRef = FirebaseDatabase.getInstance().getReference("users")
+                        val userRef = FirebaseDatabase.getInstance().getReference("users").child("id")
                         AlertDialog.Builder(c)
                             .setTitle("Delete")
                             .setIcon(R.drawable.warning_black_24dp)

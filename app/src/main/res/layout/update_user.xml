@@ -43,7 +43,7 @@
         <EditText
             android:id="@+id/update_password"
             android:hint="Password "
-            android:inputType="phone"
+            android:inputType="textPassword"
             android:textColor="@color/black"
             android:background="@drawable/shape_background"
             android:padding="15dp"
